@@ -1,0 +1,36 @@
+{
+    "proceso": "ETL con Funcionalidades Avanzadas",
+    "version": "2.0",
+    "configuracion": {
+        "servidor": "localhost",
+        "base_datos": "oulad_db",
+        "tablas_configuradas": 7
+    },
+    "estadisticas": {
+        "tablas_procesadas": 7,
+        "registros_insertados": 8701202,
+        "errores": [],
+        "tiempo_inicio": "2025-06-10T23:54:28.126383",
+        "tiempo_fin": "2025-06-11T00:17:52.367637",
+        "duracion_total": "0:23:24.241254",
+        "duracion_segundos": 1404.241254,
+        "promedio_registros_por_tabla": 1243028.857142857
+    },
+    "funcionalidades_aplicadas": [
+        "Limpieza de valores NaN",
+        "Normalización MinMax",
+        "Codificación ordinal de categóricas",
+        "Creación de FullDomain personalizado",
+        "Validación pre-inserción",
+        "Logging estructurado",
+        "Manejo robusto de errores",
+        "Generación de metadatos",
+        "Preservación de mapeos"
+    ],
+    "archivos_generados": {
+        "metadatos": "metadata/full_domains/",
+        "mapeos": "mappings/",
+        "reportes": "reports/",
+        "logs": "logs/"
+    }
+}

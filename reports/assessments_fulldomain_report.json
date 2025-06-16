@@ -1,0 +1,16 @@
+{
+    "tabla": "assessments",
+    "timestamp": "2025-06-10T23:33:45.251963",
+    "total_registros": 206,
+    "dominios_unicos": 3,
+    "top_10_dominios": {
+        "TMA_Bajo_Temprano": 106,
+        "CMA_Bajo_Temprano": 76,
+        "Exam_Bajo_Temprano": 24
+    },
+    "distribucion_completa": {
+        "TMA_Bajo_Temprano": 106,
+        "CMA_Bajo_Temprano": 76,
+        "Exam_Bajo_Temprano": 24
+    }
+}

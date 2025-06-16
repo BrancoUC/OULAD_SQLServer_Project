@@ -1,0 +1,39 @@
+{
+    "code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "assessment_type": {
+        "0": "CMA",
+        "1": "Exam",
+        "2": "TMA"
+    },
+    "weight_category": {
+        "0": "Bajo",
+        "1": "Medio",
+        "2": "Alto",
+        "3": "Crítico"
+    },
+    "date_category": {
+        "0": "Temprano",
+        "1": "Medio",
+        "2": "Tardío",
+        "3": "Final"
+    },
+    "FullDomain": {
+        "0": "CMA_Bajo_Temprano",
+        "1": "Exam_Bajo_Temprano",
+        "2": "TMA_Bajo_Temprano"
+    }
+}

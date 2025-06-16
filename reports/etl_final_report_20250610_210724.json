@@ -1,0 +1,49 @@
+{
+    "proceso": "ETL con Funcionalidades Avanzadas",
+    "version": "2.0",
+    "configuracion": {
+        "servidor": "localhost",
+        "base_datos": "oulad_db",
+        "tablas_configuradas": 7
+    },
+    "estadisticas": {
+        "tablas_procesadas": 0,
+        "registros_insertados": 0,
+        "errores": [
+            {
+                "tabla": "courses",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:17.896688"
+            },
+            {
+                "tabla": "vle",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:17.910130"
+            },
+            {
+                "tabla": "assessments",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:17.915117"
+            },
+            {
+                "tabla": "studentInfo",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:17.997174"
+            },
+            {
+                "tabla": "studentRegistration",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:18.024171"
+            },
+            {
+                "tabla": "studentVle",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:24.558528"
+            },
+            {
+                "tabla": "studentAssessment",
+                "error": "name 'tabla' is not defined",
+                "timestamp": "2025-06-10T21:07:24.742013"
+            }
+        ],
+        "tiempo_inicio": 

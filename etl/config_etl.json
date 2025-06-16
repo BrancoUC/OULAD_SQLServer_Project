@@ -1,0 +1,123 @@
+{
+  "database": {
+    "server": "localhost",
+    "database": "oulad_db",
+    "driver": "ODBC Driver 17 for SQL Server",
+    "trusted_connection": true
+  },
+  "archivos": {
+    "directorio_base": "data/raw/",
+    "tabla_archivo_map": {
+      "studentVle": "studentVle.csv",
+      "assessments": "assessments.csv",
+      "studentAssessment": "studentAssessment.csv",
+      "studentInfo": "studentInfo.csv",
+      "studentRegistration": "studentRegistration.csv",
+      "vle": "vle.csv",
+      "courses": "courses.csv"
+    }
+  },
+  "procesamiento": {
+    "orden_carga": [
+      "courses",
+      "vle", 
+      "assessments",
+      "studentInfo",
+      "studentRegistration",
+      "studentVle",
+      "studentAssessment"
+    ],
+    "claves_primarias": {
+      "studentVle": ["code_module", "code_presentation", "id_student", "id_site", "date"],
+      "assessments": ["id_assessment"],
+      "studentAssessment": ["id_assessment", "id_student"],
+      "studentInfo": ["id_student"],
+      "studentRegistration": ["code_module", "code_presentation", "id_student"],
+      "vle": ["id_site"],
+      "courses": ["code_module", "code_presentation"]
+    },
+    "limpieza": {
+      "activar_limpieza_nan": true,
+      "valor_reemplazo_categorico": "Desconocido",
+      "metodo_numerico": "mediana"
+    },
+    "normalizacion": {
+      "activar_normalizacion": true,
+      "metodo": "minmax",
+      "rango": [0, 1]
+    }
+  },
+  "fulldomain": {
+    "tablas_fulldomain": ["assessments", "vle"],
+    "configuraciones": {
+      "assessments": {
+        "campos_categoria": {
+          "weight": {
+            "bins": [-1, 20, 50, 80, 100],
+            "labels": ["Bajo", "Medio", "Alto", "Crítico"],
+            "nombre_categoria": "weight_category"
+          },
+          "date": {
+            "bins": [-1, 50, 150, 250, 400],
+            "labels": ["Temprano", "Medio", "Tardío", "Final"],
+            "nombre_categoria": "date_category"
+          }
+        },
+        "campo_principal": ["assessment_type", "tipo_assessment"],
+        "formato_fulldomain": "{campo_principal}_{weight_category}_{date_category}"
+      },
+      "vle": {
+        "campos_categoria": {
+          "week_span": {
+            "bins": [-1, 0, 2, 5, 20],
+            "labels": ["Puntual", "Corta", "Media", "Larga"],
+            "nombre_categoria": "week_span_category",
+            "calculo": "week_to - week_from"
+          },
+          "sum_click": {
+            "bins": [-1, 10, 100, 1000, "inf"],
+            "labels": ["Bajo", "Medio", "Alto", "Muy_Alto"],
+            "nombre_categoria": "click_category"
+          }
+        },
+        "campo_principal": ["activity_type", "tipo_actividad"],
+        "formato_fulldomain": "{campo_principal}_{week_span_category}_{click_category}"
+      }
+    }
+  },
+  "validacion": {
+    "activar_validacion_pre_insercion": true,
+    "verificar_nulos_residuales": true,
+    "verificar_duplicados_pk": true,
+    "limite_longitud_texto": 500,
+    "limite_valores_unicos_metadata": 50
+  },
+  "salida": {
+    "directorios": {
+      "logs": "logs",
+      "metadatos": "metadata/full_domains",
+      "mapeos": "mappings", 
+      "reportes": "reports"
+    },
+    "formato_archivos": {
+      "metadatos": ["json", "csv"],
+      "mapeos": ["json", "csv"],
+      "reportes": ["json"]
+    },
+    "logging": {
+      "nivel": "INFO",
+      "incluir_timestamp": true,
+      "formato": "%(asctime)s - %(levelname)s - %(funcName)s - %(message)s"
+    }
+  },
+  "rendimiento": {
+    "batch_size_sql": 1000,
+    "timeout_conexion": 30,
+    "reintentos_max": 3
+  },
+  "metadatos": {
+    "incluir_estadisticas_numericas": true,
+    "limite_valores_unicos_mostrar": 20,
+    "generar_csv_adicional": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "proceso": "ETL con Funcionalidades Avanzadas",
+    "version": "2.0",
+    "configuracion": {
+        "servidor": "localhost",
+        "base_datos": "oulad_db",
+        "tablas_configuradas": 7
+    },
+    "estadisticas": {
+        "tablas_procesadas": 0,
+        "registros_insertados": 0,
+        "errores": [
+            {
+                "tabla": "courses",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:03:56.088781"
+            },
+            {
+                "tabla": "vle",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:03:56.113407"
+            },
+            {
+                "tabla": "assessments",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:03:56.128271"
+            },
+            {
+                "tabla": "studentInfo",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:03:56.214406"
+            },
+            {
+                "tabla": "studentRegistration",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:03:56.259173"
+            },
+            {
+                "tabla": "studentVle",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:04:02.738490"
+            },
+            {
+                "tabla": "studentAssessment",
+                "error": "ETLProcessor.normalizar_columnas_numericas() missing 1 required positional argument: 'tabla'",
+                "timestamp": "2025-06-10T21:04:02.894548"
+            }
+        ],
+        "tiempo_inicio": 

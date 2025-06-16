@@ -1,0 +1,84 @@
+[
+    {
+        "column_name": "id_site",
+        "dtype": "int64",
+        "num_unique": 6364,
+        "num_missing": 0,
+        "total_records": 6364,
+        "min_value": 526721.0,
+        "max_value": 1077905.0,
+        "mean_value": 726099.094123193,
+        "std_value": 128315.13747347386
+    },
+    {
+        "column_name": "code_module",
+        "dtype": "object",
+        "num_unique": 7,
+        "num_missing": 0,
+        "total_records": 6364,
+        "unique_values": [
+            "AAA",
+            "BBB",
+            "CCC",
+            "DDD",
+            "EEE",
+            "FFF",
+            "GGG"
+        ]
+    },
+    {
+        "column_name": "code_presentation",
+        "dtype": "object",
+        "num_unique": 4,
+        "num_missing": 0,
+        "total_records": 6364,
+        "unique_values": [
+            "2013B",
+            "2013J",
+            "2014B",
+            "2014J"
+        ]
+    },
+    {
+        "column_name": "activity_type",
+        "dtype": "object",
+        "num_unique": 11,
+        "num_missing": 0,
+        "total_records": 6364,
+        "unique_values": [
+            "Otro",
+            "dataplus",
+            "forumng",
+            "glossary",
+            "homepage",
+            "oucollaborate",
+            "oucontent",
+            "quiz",
+            "resource",
+            "subpage",
+            "url"
+        ]
+    },
+    {
+        "column_name": "week_from",
+        "dtype": "float64",
+        "num_unique": 30,
+        "num_missing": 0,
+        "total_records": 6364,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.5184821951060925,
+        "std_value": 0.1272351488009177
+    },
+    {
+        "column_name": "week_to",
+        "dtype": "float64",
+        "num_unique": 30,
+        "num_missing": 0,
+        "total_records": 6364,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.5185472160211536,
+        "std_value": 0.12704930526419347
+    }
+]

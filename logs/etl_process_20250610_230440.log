@@ -1,0 +1,329 @@
+2025-06-10 23:04:40,221 - INFO - configurar_logging - ============================================================
+2025-06-10 23:04:40,222 - INFO - configurar_logging - 🚀 INICIANDO PROCESO ETL
+2025-06-10 23:04:40,222 - INFO - configurar_logging - ============================================================
+2025-06-10 23:04:40,450 - INFO - _conectar_bd - ✅ Conexión exitosa a BD: oulad_db
+2025-06-10 23:04:40,451 - INFO - ejecutar_etl_completo - 🚀 Iniciando proceso ETL completo...
+2025-06-10 23:04:40,451 - INFO - limpiar_tablas_bd - 🧹 Iniciando limpieza de tablas...
+2025-06-10 23:04:40,452 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla studentAssessment...
+2025-06-10 23:04:40,453 - INFO - limpiar_tablas_bd - ✅ 0 registros eliminados de studentAssessment
+2025-06-10 23:04:40,453 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla studentVle...
+2025-06-10 23:04:40,455 - INFO - limpiar_tablas_bd - ✅ 0 registros eliminados de studentVle
+2025-06-10 23:04:40,455 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla studentRegistration...
+2025-06-10 23:04:40,520 - INFO - limpiar_tablas_bd - ✅ 32593 registros eliminados de studentRegistration
+2025-06-10 23:04:40,521 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla studentInfo...
+2025-06-10 23:04:40,651 - INFO - limpiar_tablas_bd - ✅ 28785 registros eliminados de studentInfo
+2025-06-10 23:04:40,652 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla assessments...
+2025-06-10 23:04:40,654 - INFO - limpiar_tablas_bd - ✅ 0 registros eliminados de assessments
+2025-06-10 23:04:40,654 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla vle...
+2025-06-10 23:04:40,656 - INFO - limpiar_tablas_bd - ✅ 0 registros eliminados de vle
+2025-06-10 23:04:40,656 - INFO - limpiar_tablas_bd - 🗑️ Limpiando tabla courses...
+2025-06-10 23:04:40,765 - INFO - limpiar_tablas_bd - ✅ 22 registros eliminados de courses
+2025-06-10 23:04:40,766 - INFO - procesar_tabla - 📤 Procesando courses desde data/raw/courses.csv...
+2025-06-10 23:04:40,768 - INFO - procesar_tabla - 📊 Cargados 22 registros
+2025-06-10 23:04:40,769 - INFO - limpiar_valores_nulos - 🧹 Limpiando 0 valores NaN...
+2025-06-10 23:04:40,770 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 0 → 0 valores NaN
+2025-06-10 23:04:40,771 - INFO - normalizar_columnas_numericas - 📊 Normalizando 1 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:04:40,773 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:04:40,774 - INFO - convertir_categoricas_a_ordinales - 🔄 Convirtiendo 2 columnas categóricas a ordinales...
+2025-06-10 23:04:40,778 - INFO - obtener_columnas_validas - 📋 Tabla courses: 3 columnas válidas
+2025-06-10 23:04:40,778 - WARNING - procesar_tabla - ⚠️ Columnas omitidas: ['code_module_ord', 'code_presentation_ord']
+2025-06-10 23:04:40,779 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla courses...
+2025-06-10 23:04:40,781 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:04:40,786 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\courses_domain.json y metadata/full_domains\courses_domain.csv
+2025-06-10 23:04:40,786 - INFO - procesar_tabla - 💾 Insertando 22 registros en courses...
+2025-06-10 23:04:40,802 - INFO - guardar_mapeos - 🗂️ Mapeos guardados: mappings/courses_mappings.json
+2025-06-10 23:04:40,802 - INFO - procesar_tabla - ✅ Tabla courses procesada exitosamente
+2025-06-10 23:04:40,802 - INFO - procesar_tabla - 📤 Procesando vle desde data/raw/vle.csv...
+2025-06-10 23:04:40,809 - INFO - procesar_tabla - 📊 Cargados 6364 registros
+2025-06-10 23:04:40,812 - INFO - limpiar_valores_nulos - 🧹 Limpiando 10486 valores NaN...
+2025-06-10 23:04:40,816 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 10486 → 0 valores NaN
+2025-06-10 23:04:40,817 - INFO - normalizar_columnas_numericas - 📊 Normalizando 2 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:04:40,820 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:04:40,820 - INFO - procesar_tabla - 🚀 Aplicando FullDomain a vle...
+2025-06-10 23:04:40,820 - INFO - crear_fulldomain_vle - 🔧 Creando FullDomain para VLE...
+2025-06-10 23:04:40,826 - INFO - crear_fulldomain_vle - ✅ FullDomain creado. Ejemplo: resource_Puntual_Sin_Datos
+2025-06-10 23:04:40,830 - INFO - guardar_reporte_fulldomain - 📊 Reporte FullDomain: reports/vle_fulldomain_report.json
+2025-06-10 23:04:40,831 - INFO - convertir_categoricas_a_ordinales - 🔄 Convirtiendo 6 columnas categóricas a ordinales...
+2025-06-10 23:04:40,862 - INFO - obtener_columnas_validas - 📋 Tabla vle: 6 columnas válidas
+2025-06-10 23:04:40,862 - WARNING - procesar_tabla - ⚠️ Columnas omitidas: ['week_span', 'week_span_category', 'click_category', 'FullDomain', 'code_module_ord', 'code_presentation_ord', 'activity_type_ord', 'week_span_category_ord', 'click_category_ord', 'FullDomain_ord']
+2025-06-10 23:04:40,863 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla vle...
+2025-06-10 23:04:40,876 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:04:40,905 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\vle_domain.json y metadata/full_domains\vle_domain.csv
+2025-06-10 23:04:40,906 - INFO - procesar_tabla - 💾 Insertando 6364 registros en vle...
+2025-06-10 23:04:41,375 - INFO - guardar_mapeos - 🗂️ Mapeos guardados: mappings/vle_mappings.json
+2025-06-10 23:04:41,375 - INFO - procesar_tabla - ✅ Tabla vle procesada exitosamente
+2025-06-10 23:04:41,376 - INFO - procesar_tabla - 📤 Procesando assessments desde data/raw/assessments.csv...
+2025-06-10 23:04:41,378 - INFO - procesar_tabla - 📊 Cargados 206 registros
+2025-06-10 23:04:41,379 - INFO - limpiar_valores_nulos - 🧹 Limpiando 11 valores NaN...
+2025-06-10 23:04:41,381 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 11 → 0 valores NaN
+2025-06-10 23:04:41,381 - INFO - normalizar_columnas_numericas - 📊 Normalizando 2 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:04:41,385 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:04:41,386 - INFO - procesar_tabla - 🚀 Aplicando FullDomain a assessments...
+2025-06-10 23:04:41,386 - INFO - crear_fulldomain_assessments - 🔧 Creando FullDomain para assessments...
+2025-06-10 23:04:41,389 - INFO - crear_fulldomain_assessments - ✅ FullDomain creado. Ejemplo: TMA_Bajo_Temprano
+2025-06-10 23:04:41,391 - INFO - guardar_reporte_fulldomain - 📊 Reporte FullDomain: reports/assessments_fulldomain_report.json
+2025-06-10 23:04:41,392 - INFO - convertir_categoricas_a_ordinales - 🔄 Convirtiendo 6 columnas categóricas a ordinales...
+2025-06-10 23:04:41,415 - INFO - obtener_columnas_validas - 📋 Tabla assessments: 6 columnas válidas
+2025-06-10 23:04:41,415 - WARNING - procesar_tabla - ⚠️ Columnas omitidas: ['weight_category', 'date_category', 'FullDomain', 'code_module_ord', 'code_presentation_ord', 'assessment_type_ord', 'weight_category_ord', 'date_category_ord', 'FullDomain_ord']
+2025-06-10 23:04:41,416 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla assessments...
+2025-06-10 23:04:41,418 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:04:41,423 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\assessments_domain.json y metadata/full_domains\assessments_domain.csv
+2025-06-10 23:04:41,423 - INFO - procesar_tabla - 💾 Insertando 206 registros en assessments...
+2025-06-10 23:04:41,494 - INFO - guardar_mapeos - 🗂️ Mapeos guardados: mappings/assessments_mappings.json
+2025-06-10 23:04:41,494 - INFO - procesar_tabla - ✅ Tabla assessments procesada exitosamente
+2025-06-10 23:04:41,494 - INFO - procesar_tabla - 📤 Procesando studentInfo desde data/raw/studentInfo.csv...
+2025-06-10 23:04:41,548 - INFO - procesar_tabla - 📊 Cargados 32593 registros
+2025-06-10 23:04:41,557 - INFO - limpiar_valores_nulos - 🧹 Limpiando 1111 valores NaN...
+2025-06-10 23:04:41,588 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 1111 → 0 valores NaN
+2025-06-10 23:04:41,589 - INFO - normalizar_columnas_numericas - 📊 Normalizando 2 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:04:41,592 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:04:41,597 - INFO - convertir_categoricas_a_ordinales - 🔄 Convirtiendo 9 columnas categóricas a ordinales...
+2025-06-10 23:04:41,651 - INFO - procesar_tabla - 🔄 Eliminados 3808 duplicados
+2025-06-10 23:04:41,653 - INFO - obtener_columnas_validas - 📋 Tabla studentInfo: 12 columnas válidas
+2025-06-10 23:04:41,653 - WARNING - procesar_tabla - ⚠️ Columnas omitidas: ['code_module_ord', 'code_presentation_ord', 'gender_ord', 'region_ord', 'highest_education_ord', 'imd_band_ord', 'age_band_ord', 'disability_ord', 'final_result_ord']
+2025-06-10 23:04:41,657 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla studentInfo...
+2025-06-10 23:04:41,750 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:04:41,802 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\studentInfo_domain.json y metadata/full_domains\studentInfo_domain.csv
+2025-06-10 23:04:41,802 - INFO - procesar_tabla - 💾 Insertando 28785 registros en studentInfo...
+2025-06-10 23:04:43,328 - INFO - guardar_mapeos - 🗂️ Mapeos guardados: mappings/studentInfo_mappings.json
+2025-06-10 23:04:43,328 - INFO - procesar_tabla - ✅ Tabla studentInfo procesada exitosamente
+2025-06-10 23:04:43,329 - INFO - procesar_tabla - 📤 Procesando studentRegistration desde data/raw/studentRegistration.csv...
+2025-06-10 23:04:43,347 - INFO - procesar_tabla - 📊 Cargados 32593 registros
+2025-06-10 23:04:43,353 - INFO - limpiar_valores_nulos - 🧹 Limpiando 22566 valores NaN...
+2025-06-10 23:04:43,362 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 22566 → 0 valores NaN
+2025-06-10 23:04:43,362 - INFO - normalizar_columnas_numericas - 📊 Normalizando 2 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:04:43,366 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:04:43,367 - INFO - convertir_categoricas_a_ordinales - 🔄 Convirtiendo 2 columnas categóricas a ordinales...
+2025-06-10 23:04:43,396 - INFO - obtener_columnas_validas - 📋 Tabla studentRegistration: 5 columnas válidas
+2025-06-10 23:04:43,396 - WARNING - procesar_tabla - ⚠️ Columnas omitidas: ['code_module_ord', 'code_presentation_ord']
+2025-06-10 23:04:43,398 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla studentRegistration...
+2025-06-10 23:04:43,422 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:04:43,440 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\studentRegistration_domain.json y metadata/full_domains\studentRegistration_domain.csv
+2025-06-10 23:04:43,440 - INFO - procesar_tabla - 💾 Insertando 32593 registros en studentRegistration...
+2025-06-10 23:04:44,686 - INFO - guardar_mapeos - 🗂️ Mapeos guardados: mappings/studentRegistration_mappings.json
+2025-06-10 23:04:44,686 - INFO - procesar_tabla - ✅ Tabla studentRegistration procesada exitosamente
+2025-06-10 23:04:44,687 - INFO - procesar_tabla - 📤 Procesando studentVle desde data/raw/studentVle.csv...
+2025-06-10 23:04:48,604 - INFO - procesar_tabla - 📊 Cargados 10655280 registros
+2025-06-10 23:04:49,225 - INFO - limpiar_valores_nulos - 🧹 Limpiando 0 valores NaN...
+2025-06-10 23:04:51,392 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 0 → 0 valores NaN
+2025-06-10 23:04:51,618 - INFO - normalizar_columnas_numericas - 📊 Normalizando 1 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:04:51,800 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:04:52,172 - INFO - convertir_categoricas_a_ordinales - 🔄 Convirtiendo 2 columnas categóricas a ordinales...
+2025-06-10 23:04:56,277 - INFO - procesar_tabla - 🔄 Eliminados 2195960 duplicados
+2025-06-10 23:04:56,295 - INFO - obtener_columnas_validas - 📋 Tabla studentVle: 6 columnas válidas
+2025-06-10 23:04:56,295 - WARNING - procesar_tabla - ⚠️ Columnas omitidas: ['code_module_ord', 'code_presentation_ord']
+2025-06-10 23:04:56,615 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla studentVle...
+2025-06-10 23:05:03,207 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:05:06,497 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\studentVle_domain.json y metadata/full_domains\studentVle_domain.csv
+2025-06-10 23:05:06,498 - INFO - procesar_tabla - 💾 Insertando 8459320 registros en studentVle...
+2025-06-10 23:29:46,862 - ERROR - _close_connection - Exception terminating connection <pyodbc.Connection object at 0x000001530880EA70>
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2354, in _handle_dbapi_exception
+    raise exc_info[1].with_traceback(exc_info[2])
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2114, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 374, in _close_connection
+    self._dialect.do_terminate(connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 709, in do_terminate
+    self.do_close(dbapi_connection)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 712, in do_close
+    dbapi_connection.close()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+KeyboardInterrupt
+2025-06-10 23:29:47,164 - ERROR - _close_connection - Exception terminating connection <pyodbc.Connection object at 0x000001530880EA70>
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2354, in _handle_dbapi_exception
+    raise exc_info[1].with_traceback(exc_info[2])
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2114, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ~~~~~~~~~~~~~~~~~^
+        frame,
+        ^^^^^^
+    ...<9 lines>...
+        **engine_kwargs,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 2018, in to_sql
+    total_inserted = sql_engine.insert_records(
+        table=table,
+    ...<7 lines>...
+        **engine_kwargs,
+    )
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 1558, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 1119, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 1010, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1840, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2122, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2364, in _handle_dbapi_exception
+    self.invalidate(e)
+    ~~~~~~~~~~~~~~~^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 749, in invalidate
+    pool_proxied_connection.invalidate(exception)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1475, in invalidate
+    self._connection_record.invalidate(e=e, soft=soft)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 817, in invalidate
+    self.__close(terminate=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 884, in __close
+    self.__pool._close_connection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.dbapi_connection, terminate=terminate
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 374, in _close_connection
+    self._dialect.do_terminate(connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 709, in do_terminate
+    self.do_close(dbapi_connection)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 712, in do_close
+    dbapi_connection.close()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1141, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 706, in do_commit
+    dbapi_connection.commit()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+pyodbc.ProgrammingError: Attempt to use a closed connection.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1141, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 706, in do_commit
+    dbapi_connection.commit()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) Attempt to use a closed connection.
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 374, in _close_connection
+    self._dialect.do_terminate(connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 709, in do_terminate
+    self.do_close(dbapi_connection)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\branc\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 712, in do_close
+    dbapi_connection.close()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+pyodbc.ProgrammingError: Attempt to use a closed connection.
+2025-06-10 23:29:47,284 - ERROR - procesar_tabla - ❌ Error procesando studentVle: (pyodbc.ProgrammingError) Attempt to use a closed connection.
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-06-10 23:29:47,284 - WARNING - ejecutar_etl_completo - ⚠️ Tabla studentVle tuvo errores pero continuando...
+2025-06-10 23:29:47,284 - INFO - procesar_tabla - 📤 Procesando studentAssessment desde data/raw/studentAssessment.csv...
+2025-06-10 23:29:47,362 - INFO - procesar_tabla - 📊 Cargados 173912 registros
+2025-06-10 23:29:47,364 - INFO - limpiar_valores_nulos - 🧹 Limpiando 173 valores NaN...
+2025-06-10 23:29:47,384 - INFO - limpiar_valores_nulos - ✅ Limpieza completa: 173 → 0 valores NaN
+2025-06-10 23:29:47,522 - INFO - normalizar_columnas_numericas - 📊 Normalizando 3 columnas numéricas (excluyendo claves primarias)...
+2025-06-10 23:29:47,539 - INFO - normalizar_columnas_numericas - ✅ Normalización completada
+2025-06-10 23:29:47,605 - INFO - obtener_columnas_validas - 📋 Tabla studentAssessment: 5 columnas válidas
+2025-06-10 23:29:47,608 - INFO - validar_datos_pre_insercion - 🔍 Validando datos para tabla studentAssessment...
+2025-06-10 23:29:47,621 - INFO - validar_datos_pre_insercion - ✅ Validación pre-inserción exitosa
+2025-06-10 23:29:47,676 - INFO - generar_full_domain - 📚 Metadatos guardados: metadata/full_domains\studentAssessment_domain.json y metadata/full_domains\studentAssessment_domain.csv
+2025-06-10 23:29:47,677 - INFO - procesar_tabla - 💾 Insertando 173912 registros en studentAssessment...
+2025-06-10 23:30:01,899 - INFO - procesar_tabla - ✅ Tabla studentAssessment procesada exitosamente
+2025-06-10 23:30:01,900 - INFO - generar_reporte_final - 📋 Generando reporte final...
+2025-06-10 23:30:01,901 - INFO - generar_reporte_final - ✅ Reporte final: reports/etl_final_report_20250610_233001.json
+2025-06-10 23:30:01,902 - INFO - generar_reporte_final - ============================================================
+2025-06-10 23:30:01,902 - INFO - generar_reporte_final - 📊 RESUMEN FINAL DEL PROCESO ETL
+2025-06-10 23:30:01,902 - INFO - generar_reporte_final - ============================================================
+2025-06-10 23:30:01,902 - INFO - generar_reporte_final - ✅ Tablas procesadas: 6
+2025-06-10 23:30:01,902 - INFO - generar_reporte_final - 📝 Registros insertados: 241882
+2025-06-10 23:30:01,903 - INFO - generar_reporte_final - ⏱️ Duración total: 0:25:21.677795
+2025-06-10 23:30:01,903 - INFO - generar_reporte_final - ❌ Errores: 1
+2025-06-10 23:30:01,903 - WARNING - generar_reporte_final - ⚠️ ERRORES DETECTADOS:
+2025-06-10 23:30:01,903 - WARNING - generar_reporte_final -    - studentVle: (pyodbc.ProgrammingError) Attempt to use a closed connection.
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-06-10 23:30:01,903 - INFO - ejecutar_etl_completo - 🎉 Proceso ETL completado!
+2025-06-10 23:30:01,904 - INFO - ejecutar_etl_completo - 📁 Revisa las carpetas generadas para resultados detallados:
+2025-06-10 23:30:01,904 - INFO - ejecutar_etl_completo -    - logs/ : Archivos de log del proceso
+2025-06-10 23:30:01,904 - INFO - ejecutar_etl_completo -    - metadata/ : Documentación de esquemas
+2025-06-10 23:30:01,904 - INFO - ejecutar_etl_completo -    - mappings/ : Mapeos categóricos
+2025-06-10 23:30:01,904 - INFO - ejecutar_etl_completo -    - reports/ : Reportes estadísticos
+2025-06-10 23:30:01,905 - INFO - ejecutar_etl_completo - 🔌 Conexión BD cerrada

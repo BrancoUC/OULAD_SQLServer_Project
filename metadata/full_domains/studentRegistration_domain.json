@@ -1,0 +1,64 @@
+[
+    {
+        "column_name": "code_module",
+        "dtype": "object",
+        "num_unique": 7,
+        "num_missing": 0,
+        "total_records": 32593,
+        "unique_values": [
+            "AAA",
+            "BBB",
+            "CCC",
+            "DDD",
+            "EEE",
+            "FFF",
+            "GGG"
+        ]
+    },
+    {
+        "column_name": "code_presentation",
+        "dtype": "object",
+        "num_unique": 4,
+        "num_missing": 0,
+        "total_records": 32593,
+        "unique_values": [
+            "2013B",
+            "2013J",
+            "2014B",
+            "2014J"
+        ]
+    },
+    {
+        "column_name": "id_student",
+        "dtype": "int64",
+        "num_unique": 28785,
+        "num_missing": 0,
+        "total_records": 32593,
+        "min_value": 3733.0,
+        "max_value": 2716795.0,
+        "mean_value": 706687.6691314086,
+        "std_value": 549167.313855204
+    },
+    {
+        "column_name": "date_registration",
+        "dtype": "float64",
+        "num_unique": 332,
+        "num_missing": 0,
+        "total_records": 32593,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.5165763509383908,
+        "std_value": 0.10067210722267445
+    },
+    {
+        "column_name": "date_unregistration",
+        "dtype": "float64",
+        "num_unique": 416,
+        "num_missing": 0,
+        "total_records": 32593,
+        "min_value": 0.0,
+        "max_value": 0.9999999999999998,
+        "mean_value": 0.49324183565696217,
+        "std_value": 0.058132493526878506
+    }
+]

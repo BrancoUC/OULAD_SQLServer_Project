@@ -1,0 +1,7 @@
+column_name,dtype,num_unique,num_missing,total_records,unique_values,min_value,max_value,mean_value,std_value
+code_module,object,7,0,8459320,"['AAA', 'BBB', 'CCC', 'DDD', 'EEE', 'FFF', 'GGG']",,,,
+code_presentation,object,4,0,8459320,"['2013B', '2013J', '2014B', '2014J']",,,,
+id_student,int64,26074,0,8459320,,6516.0,2698588.0,733239.8818420393,584696.5563619317
+id_site,int64,6268,0,8459320,,526721.0,1049562.0,735166.058669964,130790.73991764107
+date,int64,295,0,8459320,,-25.0,269.0,93.93650458902134,75.98021998076558
+sum_click,float64,381,0,8459320,,0.0,1.0000000000000002,0.0003343332657260889,0.0010722855587190707

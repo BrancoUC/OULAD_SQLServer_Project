@@ -1,0 +1,57 @@
+{
+    "proceso": "ETL con Funcionalidades Avanzadas",
+    "version": "2.0",
+    "configuracion": {
+        "servidor": "localhost",
+        "base_datos": "oulad_db",
+        "tablas_configuradas": 7
+    },
+    "estadisticas": {
+        "tablas_procesadas": 3,
+        "registros_insertados": 61400,
+        "errores": [
+            {
+                "tabla": "vle",
+                "error": "'sum_click'",
+                "timestamp": "2025-06-10T23:35:53.399254"
+            },
+            {
+                "tabla": "assessments",
+                "error": "'score'",
+                "timestamp": "2025-06-10T23:35:53.413954"
+            },
+            {
+                "tabla": "studentVle",
+                "error": "(pyodbc.IntegrityError) ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint \"FK__studentVl__id_si__4BAC3F29\". The conflict occurred in database \"oulad_db\", table \"dbo.vle\", column \\'id_site\\'. (547) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)')\n[SQL: INSERT INTO [studentVle] (code_module, code_presentation, id_student, id_site, date, sum_click) VALUES (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?,  ... 6731 characters truncated ... , (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?)]\n[parameters: ('AAA', '2013J', 28400, 546652, -10, 0.00043004587155963305, 'AAA', '2013J', 28400, 546614, -10, 0.0014334862385321102, 'AAA', '2013J', 28400, 546714, -10, 0.0, 'AAA', '2013J', 28400, 546876, -10, 0.00014334862385321102, 'AAA', '2013J', 28400, 546688, -10, 0.0020068807339449542, 'AAA', '2013J', 28400, 546662, -10, 0.0022935779816513763, 'AAA', '2013J', 28400, 546890, -10, 0.0, 'AAA', '2013J', 28400, 547011, -10, 0.0, 'AAA', '2013J' ... 1994 parameters truncated ... -10, 0.0, 'AAA', '2013J', 145130, 546672, -10, 0.0, 'AAA', '2013J', 145130, 546681, -10, 0.0, 'AAA', '2013J', 145130, 546719, -10, 0.00014334862385321102, 'AAA', '2013J', 145130, 546879, -10, 0.0005733944954128441, 'AAA', '2013J', 146188, 546614, -10, 0.0005733944954128441, 'AAA', '2013J', 146188, 546669, -10, 0.0005733944954128441, 'AAA', '2013J', 145130, 546668, -10, 0.0, 'AAA', '2013J', 145130, 546614, -10, 0.0)]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)",
+                "timestamp": "2025-06-10T23:37:03.631091"
+            },
+            {
+                "tabla": "studentAssessment",
+                "error": "(pyodbc.IntegrityError) ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint \"FK__studentAs__id_as__45F365D3\". The conflict occurred in database \"oulad_db\", table \"dbo.assessments\", column \\'id_assessment\\'. (547) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)')\n[SQL: INSERT INTO [studentAssessment] (id_assessment, id_student, date_submitted, is_banked, score) VALUES (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?,  ... 6872 characters truncated ... (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?)]\n[parameters: (1752, 11391, 0.04684975767366721, 0.0, 0.78, 1752, 28400, 0.053311793214862686, 0.0, 0.7000000000000001, 1752, 31604, 0.04523424878836834, 0.0, 0.72, 1752, 32885, 0.05977382875605816, 0.0, 0.6900000000000001, 1752, 38053, 0.048465266558966075, 0.0, 0.79, 1752, 45462, 0.050080775444264945, 0.0, 0.7000000000000001, 1752, 45642, 0.04684975767366721, 0.0, 0.72, 1752, 52130, 0.048465266558966075, 0.0, 0.72, 1752, 53025, 0.03231017770597738, 0.0, 0.71, 1752, 57506, 0.04684975767366721, 0.0, 0.68 ... 1995 parameters truncated ... 1753, 2139353, 0.11308562197092084, 0.0, 0.62, 1753, 2143752, 0.10339256865912763, 0.0, 0.56, 1753, 2146792, 0.10500807754442651, 0.0, 0.6, 1753, 2153153, 0.10339256865912763, 0.0, 0.67, 1753, 2155014, 0.11793214862681745, 0.0, 0.64, 1753, 2171627, 0.09854604200323103, 0.0, 0.67, 1753, 2182846, 0.1001615508885299, 0.0, 0.63, 1753, 2194100, 0.10177705977382875, 0.0, 0.61, 1753, 2197016, 0.1001615508885299, 0.0, 0.75, 1753, 2208424, 0.10339256865912763, 0.0, 0.5700000000000001)]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)",
+                "timestamp": "2025-06-10T23:37:06.979502"
+            }
+        ],
+        "tiempo_inicio": "2025-06-10T23:35:14.542048",
+        "tiempo_fin": "2025-06-10T23:37:06.980008",
+        "duracion_total": "0:01:52.437960",
+        "duracion_segundos": 112.43796,
+        "promedio_registros_por_tabla": 20466.666666666668
+    },
+    "funcionalidades_aplicadas": [
+        "Limpieza de valores NaN",
+        "Normalización MinMax",
+        "Codificación ordinal de categóricas",
+        "Creación de FullDomain personalizado",
+        "Validación pre-inserción",
+        "Logging estructurado",
+        "Manejo robusto de errores",
+        "Generación de metadatos",
+        "Preservación de mapeos"
+    ],
+    "archivos_generados": {
+        "metadatos": "metadata/full_domains/",
+        "mapeos": "mappings/",
+        "reportes": "reports/",
+        "logs": "logs/"
+    }
+}

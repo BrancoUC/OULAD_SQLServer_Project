@@ -1,0 +1,62 @@
+{
+    "code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "activity_type": {
+        "0": "Otro",
+        "1": "dataplus",
+        "2": "forumng",
+        "3": "glossary",
+        "4": "homepage",
+        "5": "oucollaborate",
+        "6": "oucontent",
+        "7": "quiz",
+        "8": "resource",
+        "9": "subpage",
+        "10": "url"
+    },
+    "week_span_category": {
+        "0": "Puntual",
+        "1": "Corta",
+        "2": "Media",
+        "3": "Larga"
+    },
+    "click_category": {
+        "0": "Sin_Datos"
+    },
+    "FullDomain": {
+        "0": "dataplus_Puntual_Sin_Datos",
+        "1": "dualpane_Puntual_Sin_Datos",
+        "2": "externalquiz_Puntual_Sin_Datos",
+        "3": "folder_Puntual_Sin_Datos",
+        "4": "forumng_Puntual_Sin_Datos",
+        "5": "glossary_Puntual_Sin_Datos",
+        "6": "homepage_Puntual_Sin_Datos",
+        "7": "htmlactivity_Puntual_Sin_Datos",
+        "8": "oucollaborate_Puntual_Sin_Datos",
+        "9": "oucontent_Corta_Sin_Datos",
+        "10": "oucontent_Puntual_Sin_Datos",
+        "11": "ouelluminate_Puntual_Sin_Datos",
+        "12": "ouwiki_Puntual_Sin_Datos",
+        "13": "page_Puntual_Sin_Datos",
+        "14": "questionnaire_Puntual_Sin_Datos",
+        "15": "quiz_Puntual_Sin_Datos",
+        "16": "repeatactivity_Puntual_Sin_Datos",
+        "17": "resource_Puntual_Sin_Datos",
+        "18": "sharedsubpage_Puntual_Sin_Datos",
+        "19": "subpage_Puntual_Sin_Datos",
+        "20": "url_Puntual_Sin_Datos"
+    }
+}

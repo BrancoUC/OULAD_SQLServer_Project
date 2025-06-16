@@ -1,0 +1,76 @@
+[
+    {
+        "column_name": "code_module",
+        "dtype": "object",
+        "num_unique": 7,
+        "num_missing": 0,
+        "total_records": 206,
+        "unique_values": [
+            "AAA",
+            "BBB",
+            "CCC",
+            "DDD",
+            "EEE",
+            "FFF",
+            "GGG"
+        ]
+    },
+    {
+        "column_name": "code_presentation",
+        "dtype": "object",
+        "num_unique": 4,
+        "num_missing": 0,
+        "total_records": 206,
+        "unique_values": [
+            "2013B",
+            "2013J",
+            "2014B",
+            "2014J"
+        ]
+    },
+    {
+        "column_name": "id_assessment",
+        "dtype": "int64",
+        "num_unique": 206,
+        "num_missing": 0,
+        "total_records": 206,
+        "min_value": 1752.0,
+        "max_value": 40088.0,
+        "mean_value": 26473.97572815534,
+        "std_value": 10098.625521273685
+    },
+    {
+        "column_name": "assessment_type",
+        "dtype": "object",
+        "num_unique": 3,
+        "num_missing": 0,
+        "total_records": 206,
+        "unique_values": [
+            "CMA",
+            "Exam",
+            "TMA"
+        ]
+    },
+    {
+        "column_name": "date",
+        "dtype": "float64",
+        "num_unique": 74,
+        "num_missing": 0,
+        "total_records": 206,
+        "min_value": 0.0,
+        "max_value": 0.9999999999999999,
+        "mean_value": 0.5356571918742932,
+        "std_value": 0.29699099217191344
+    },
+    {
+        "column_name": "weight",
+        "dtype": "float64",
+        "num_unique": 24,
+        "num_missing": 0,
+        "total_records": 206,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.2087378640776699,
+        "std_value": 0.3038422395904131
+    }
+]

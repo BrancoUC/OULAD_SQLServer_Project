@@ -1,0 +1,75 @@
+[
+    {
+        "column_name": "code_module",
+        "dtype": "object",
+        "num_unique": 7,
+        "num_missing": 0,
+        "total_records": 8459320,
+        "unique_values": [
+            "AAA",
+            "BBB",
+            "CCC",
+            "DDD",
+            "EEE",
+            "FFF",
+            "GGG"
+        ]
+    },
+    {
+        "column_name": "code_presentation",
+        "dtype": "object",
+        "num_unique": 4,
+        "num_missing": 0,
+        "total_records": 8459320,
+        "unique_values": [
+            "2013B",
+            "2013J",
+            "2014B",
+            "2014J"
+        ]
+    },
+    {
+        "column_name": "id_student",
+        "dtype": "int64",
+        "num_unique": 26074,
+        "num_missing": 0,
+        "total_records": 8459320,
+        "min_value": 6516.0,
+        "max_value": 2698588.0,
+        "mean_value": 733239.8818420393,
+        "std_value": 584696.5563619317
+    },
+    {
+        "column_name": "id_site",
+        "dtype": "int64",
+        "num_unique": 6268,
+        "num_missing": 0,
+        "total_records": 8459320,
+        "min_value": 526721.0,
+        "max_value": 1049562.0,
+        "mean_value": 735166.058669964,
+        "std_value": 130790.73991764107
+    },
+    {
+        "column_name": "date",
+        "dtype": "int64",
+        "num_unique": 295,
+        "num_missing": 0,
+        "total_records": 8459320,
+        "min_value": -25.0,
+        "max_value": 269.0,
+        "mean_value": 93.93650458902134,
+        "std_value": 75.98021998076558
+    },
+    {
+        "column_name": "sum_click",
+        "dtype": "float64",
+        "num_unique": 381,
+        "num_missing": 0,
+        "total_records": 8459320,
+        "min_value": 0.0,
+        "max_value": 1.0000000000000002,
+        "mean_value": 0.0003343332657260889,
+        "std_value": 0.0010722855587190707
+    }
+]

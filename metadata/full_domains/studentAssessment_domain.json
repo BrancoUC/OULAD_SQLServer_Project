@@ -1,0 +1,61 @@
+[
+    {
+        "column_name": "id_assessment",
+        "dtype": "int64",
+        "num_unique": 188,
+        "num_missing": 0,
+        "total_records": 173912,
+        "min_value": 1752.0,
+        "max_value": 37443.0,
+        "mean_value": 26553.803555821334,
+        "std_value": 8829.784253519334
+    },
+    {
+        "column_name": "id_student",
+        "dtype": "int64",
+        "num_unique": 23369,
+        "num_missing": 0,
+        "total_records": 173912,
+        "min_value": 6516.0,
+        "max_value": 2698588.0,
+        "mean_value": 705150.7172248034,
+        "std_value": 552395.1909984985
+    },
+    {
+        "column_name": "date_submitted",
+        "dtype": "float64",
+        "num_unique": 312,
+        "num_missing": 0,
+        "total_records": 173912,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.20522284644208671,
+        "std_value": 0.11548327589724562
+    },
+    {
+        "column_name": "is_banked",
+        "dtype": "float64",
+        "num_unique": 2,
+        "num_missing": 0,
+        "total_records": 173912,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.010976815860895165,
+        "std_value": 0.10419399118497938,
+        "unique_values": [
+            0.0,
+            1.0
+        ]
+    },
+    {
+        "column_name": "score",
+        "dtype": "float64",
+        "num_unique": 101,
+        "num_missing": 0,
+        "total_records": 173912,
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "mean_value": 0.7580375132250794,
+        "std_value": 0.18789221680185883
+    }
+]

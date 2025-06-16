@@ -1,0 +1,7 @@
+column_name,dtype,num_unique,num_missing,total_records,min_value,max_value,mean_value,std_value,unique_values
+id_site,int64,6364,0,6364,526721.0,1077905.0,726099.094123193,128315.13747347386,
+code_module,object,7,0,6364,,,,,"['AAA', 'BBB', 'CCC', 'DDD', 'EEE', 'FFF', 'GGG']"
+code_presentation,object,4,0,6364,,,,,"['2013B', '2013J', '2014B', '2014J']"
+activity_type,object,11,0,6364,,,,,"['Otro', 'dataplus', 'forumng', 'glossary', 'homepage', 'oucollaborate', 'oucontent', 'quiz', 'resource', 'subpage', 'url']"
+week_from,float64,30,0,6364,0.0,1.0,0.5184821951060925,0.1272351488009177,
+week_to,float64,30,0,6364,0.0,1.0,0.5185472160211536,0.12704930526419347,

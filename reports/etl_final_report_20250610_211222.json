@@ -1,0 +1,49 @@
+{
+    "proceso": "ETL con Funcionalidades Avanzadas",
+    "version": "2.0",
+    "configuracion": {
+        "servidor": "localhost",
+        "base_datos": "oulad_db",
+        "tablas_configuradas": 7
+    },
+    "estadisticas": {
+        "tablas_procesadas": 0,
+        "registros_insertados": 0,
+        "errores": [
+            {
+                "tabla": "courses",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:15.420717"
+            },
+            {
+                "tabla": "vle",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:15.432956"
+            },
+            {
+                "tabla": "assessments",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:15.438681"
+            },
+            {
+                "tabla": "studentInfo",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:15.516329"
+            },
+            {
+                "tabla": "studentRegistration",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:15.544758"
+            },
+            {
+                "tabla": "studentVle",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:22.799087"
+            },
+            {
+                "tabla": "studentAssessment",
+                "error": "'ETLProcessor' object has no attribute 'primary_keys'",
+                "timestamp": "2025-06-10T21:12:22.967771"
+            }
+        ],
+        "tiempo_inicio": 

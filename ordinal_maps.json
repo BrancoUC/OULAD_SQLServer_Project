@@ -1,0 +1,172 @@
+{
+    "courses.code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "courses.code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "vle.code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "vle.code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "vle.activity_type": {
+        "0": "dataplus",
+        "1": "dualpane",
+        "2": "externalquiz",
+        "3": "folder",
+        "4": "forumng",
+        "5": "glossary",
+        "6": "homepage",
+        "7": "htmlactivity",
+        "8": "oucollaborate",
+        "9": "oucontent",
+        "10": "ouelluminate",
+        "11": "ouwiki",
+        "12": "page",
+        "13": "questionnaire",
+        "14": "quiz",
+        "15": "repeatactivity",
+        "16": "resource",
+        "17": "sharedsubpage",
+        "18": "subpage",
+        "19": "url"
+    },
+    "assessments.code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "assessments.code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "assessments.assessment_type": {
+        "0": "CMA",
+        "1": "Exam",
+        "2": "TMA"
+    },
+    "studentInfo.code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "studentInfo.code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "studentInfo.gender": {
+        "0": "F",
+        "1": "M"
+    },
+    "studentInfo.region": {
+        "0": "East Anglian Region",
+        "1": "East Midlands Region",
+        "2": "Ireland",
+        "3": "London Region",
+        "4": "North Region",
+        "5": "North Western Region",
+        "6": "Scotland",
+        "7": "South East Region",
+        "8": "South Region",
+        "9": "South West Region",
+        "10": "Wales",
+        "11": "West Midlands Region",
+        "12": "Yorkshire Region"
+    },
+    "studentInfo.highest_education": {
+        "0": "A Level or Equivalent",
+        "1": "HE Qualification",
+        "2": "Lower Than A Level",
+        "3": "No Formal quals",
+        "4": "Post Graduate Qualification"
+    },
+    "studentInfo.imd_band": {
+        "0": "0-10%",
+        "1": "10-20",
+        "2": "20-30%",
+        "3": "30-40%",
+        "4": "40-50%",
+        "5": "50-60%",
+        "6": "60-70%",
+        "7": "70-80%",
+        "8": "80-90%",
+        "9": "90-100%"
+    },
+    "studentInfo.age_band": {
+        "0": "0-35",
+        "1": "35-55",
+        "2": "55<="
+    },
+    "studentInfo.disability": {
+        "0": "N",
+        "1": "Y"
+    },
+    "studentInfo.final_result": {
+        "0": "Distinction",
+        "1": "Fail",
+        "2": "Pass",
+        "3": "Withdrawn"
+    },
+    "studentRegistration.code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "studentRegistration.code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    },
+    "studentVle.code_module": {
+        "0": "AAA",
+        "1": "BBB",
+        "2": "CCC",
+        "3": "DDD",
+        "4": "EEE",
+        "5": "FFF",
+        "6": "GGG"
+    },
+    "studentVle.code_presentation": {
+        "0": "2013B",
+        "1": "2013J",
+        "2": "2014B",
+        "3": "2014J"
+    }
+}

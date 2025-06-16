@@ -1,0 +1,7 @@
+column_name,dtype,num_unique,num_missing,total_records,unique_values,min_value,max_value,mean_value,std_value
+code_module,object,7,0,206,"['AAA', 'BBB', 'CCC', 'DDD', 'EEE', 'FFF', 'GGG']",,,,
+code_presentation,object,4,0,206,"['2013B', '2013J', '2014B', '2014J']",,,,
+id_assessment,int64,206,0,206,,1752.0,40088.0,26473.97572815534,10098.625521273685
+assessment_type,object,3,0,206,"['CMA', 'Exam', 'TMA']",,,,
+date,float64,74,0,206,,0.0,0.9999999999999999,0.5356571918742932,0.29699099217191344
+weight,float64,24,0,206,,0.0,1.0,0.2087378640776699,0.3038422395904131

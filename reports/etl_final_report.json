@@ -1,0 +1,21 @@
+{
+    "proceso": "ETL con FullDomain",
+    "fecha_ejecucion": "2025-06-10T20:15:48.231287",
+    "tablas_procesadas": [
+        "courses",
+        "vle",
+        "assessments",
+        "studentInfo",
+        "studentRegistration",
+        "studentVle",
+        "studentAssessment"
+    ],
+    "tablas_con_fulldomain": [
+        "assessments",
+        "vle"
+    ],
+    "directorios_creados": [
+        "mappings",
+        "reports"
+    ]
+}

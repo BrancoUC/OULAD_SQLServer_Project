@@ -1,0 +1,42 @@
+{
+    "proceso": "ETL con Funcionalidades Avanzadas",
+    "version": "2.0",
+    "configuracion": {
+        "servidor": "localhost",
+        "base_datos": "oulad_db",
+        "tablas_configuradas": 7
+    },
+    "estadisticas": {
+        "tablas_procesadas": 6,
+        "registros_insertados": 241882,
+        "errores": [
+            {
+                "tabla": "studentVle",
+                "error": "(pyodbc.ProgrammingError) Attempt to use a closed connection.\n(Background on this error at: https://sqlalche.me/e/20/f405)",
+                "timestamp": "2025-06-10T23:29:47.284432"
+            }
+        ],
+        "tiempo_inicio": "2025-06-10T23:04:40.222818",
+        "tiempo_fin": "2025-06-10T23:30:01.900613",
+        "duracion_total": "0:25:21.677795",
+        "duracion_segundos": 1521.677795,
+        "promedio_registros_por_tabla": 40313.666666666664
+    },
+    "funcionalidades_aplicadas": [
+        "Limpieza de valores NaN",
+        "Normalización MinMax",
+        "Codificación ordinal de categóricas",
+        "Creación de FullDomain personalizado",
+        "Validación pre-inserción",
+        "Logging estructurado",
+        "Manejo robusto de errores",
+        "Generación de metadatos",
+        "Preservación de mapeos"
+    ],
+    "archivos_generados": {
+        "metadatos": "metadata/full_domains/",
+        "mapeos": "mappings/",
+        "reportes": "reports/",
+        "logs": "logs/"
+    }
+}

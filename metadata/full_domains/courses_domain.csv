@@ -1,0 +1,4 @@
+column_name,dtype,num_unique,num_missing,total_records,unique_values,min_value,max_value,mean_value,std_value
+code_module,object,7,0,22,"['AAA', 'BBB', 'CCC', 'DDD', 'EEE', 'FFF', 'GGG']",,,,
+code_presentation,object,4,0,22,"['2013B', '2013J', '2014B', '2014J']",,,,
+module_presentation_length,float64,7,0,22,"[0.0, 0.17142857142857082, 0.1999999999999993, 0.7714285714285714, 0.7999999999999998, 0.9714285714285706, 0.9999999999999991]",0.0,0.9999999999999991,0.615584415584415,0.3901336416238764
